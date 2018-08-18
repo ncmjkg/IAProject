@@ -65,6 +65,7 @@ public class PauseMenu : MonoBehaviour {
     //voice volume setting ui on or off(not working)
     public void SettingVolume()
     {
+        // Check for existance of GetComponent function on theVolume. Function probably does not exist and return value is probably not the correct type if it does
         if (theVolume.GetComponent("Setting").gameObject.activeInHierarchy == false)
         {
             theVolume.GetComponent("Setting").gameObject.SetActive(true);
